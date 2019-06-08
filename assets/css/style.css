@@ -56,16 +56,21 @@
     color: rgb(255, 204, 50, .5);
 }
 
-.navbar-dark .navbar-nav .nav-link:active {
+.navbar-dark .navbar-nav .active>.nav-link {
     color: rgb(255, 204, 50, 1);
 }
 
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgb(255, 204, 50, 1);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 204, 50, .75);
 }
 
 
-.intro-container {
+.social-container {
 
     height: 85vh;
     background: url(../images/monkees-bg.jpg) no-repeat center top fixed;
@@ -141,6 +146,55 @@
     width: 35px;
 }
 
+.vl {
+    border-left: 3px solid #dee2e6;
+    height: 150px;
+    position: absolute;
+    margin-left: 1.5px;
+    top: 35%;
+}
+
+@media(min-width:992px) {
+    .vl-1 {
+
+        left: 33.3%;
+    }
+}
+
+@media(max-width:991px) {
+    .vl-1 {
+        left: 50%;
+    }
+}
+
+.vl-2 {
+    left: 66.6%;
+}
+
+
+.tour-container-wrapper {
+    /*background: linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+    linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: rgba(236, 23, 58, 0.42)*/
+    /*background: radial-gradient(rgba(236, 23, 58, 0.42) 3px, transparent 4px),
+    radial-gradient(rgba(236, 23, 58, 0.42) 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;*/
+    
+    background-color: white;
+    background-image: radial-gradient(rgba(236, 23, 58, 0.2) 9px, transparent 10px),
+    repeating-radial-gradient(rgba(236, 23, 58, 0.2) 0, rgba(236, 23, 58, 0.2) 4px, transparent 5px, transparent 20px, rgba(236, 23, 58, 0.2) 21px, rgba(236, 23, 58, 0.2) 25px, transparent 26px, transparent 50px);
+    background-size: 30px 30px, 90px 90px;
+    background-position: 0 0;
+}
+
 .content-container {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -168,7 +222,7 @@
     opacity: 0.5;
 }
 
-.tour-card-1 {
+/*.tour-card-1 {
     background-image: url(../images/London.jpg);
 }
 
@@ -178,7 +232,7 @@
 
 .tour-card-3 {
     background-image: url(../images/Dublin.jpg);
-}
+}*/
 
 .container-wrapper--red {
     background-color: #f05f40;
@@ -189,29 +243,60 @@
 
 /*buttons*/
 
-.btn {}
-
-.vl {
-        border-left: 3px solid #dee2e6;
-        height: 150px;
-        position: absolute;
-        margin-left: 1.5px;
-        top: 35%;
-    }
-
-@media(min-width:992px) {
-.vl-1 {
-
-        left: 33.3%;
-    }
+.music-links i {
+    padding-right: 3px;
 }
 
-@media(max-width:991px) {
-    .vl-1 {
-        left: 50%;
-    }
+.btn--social {
+    font-weight: 600;
+    border-radius: 23px;
+    width: 100px;
 }
 
-.vl-2 {
-    left: 66.6%;
+.btn--pink {
+    color: white;
+    background-color: #ff2f56;
+    border-color: #ff2f56;
+}
+
+.btn--green {
+    color: white;
+    background-color: #1DB954;
+    border-color: #1DB954;
+}
+
+.btn--red {
+    color: white;
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.btn--pink:hover,
+.btn--pink:active,
+.btn--pink:focus,
+.btn--pink:active:focus {
+    background-color: #e64c2b;
+    border-color: #e64c2b;
+    color: white;
+    text-decoration: none;
+}
+
+.btn--green:hover,
+.btn--green:active,
+.btn--green:focus,
+.btn--green:active:focus {
+    background-color: #1ea94f;
+    border-color: #1ea94f;
+    color: white;
+    text-decoration: none;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #ec1717;
+    border-color: #ec1717;
+    color: white;
+    text-decoration: none;
 }
