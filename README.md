@@ -2,4 +2,6 @@
 
 ## The Monkees band website
 
-initial commit
+As far as gallery tab almost complete.
+
+Functionality, such as link hrefs etc. still needs to be added.
