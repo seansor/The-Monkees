@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
 }
 
 .logo {
@@ -439,57 +440,46 @@ body {
 
 /*-------------Music Page-------------*/
 
-
-.new-music a {
+.new-music {
     color: #fafafa;
-}
-
-.new-music-details h2, .new-music-details h3 {
-    font-weight: 300;
-}
-
-
-.new-music .new-music-img img {
     
-    height: 160px;
-    width: 160px;
-        
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     -ms-transition: all 0.25s ease;
     transition: all 0.25s ease;
-    
-}
-    
-.new-music:hover .new-music-img img {
-    height: 165px;
-    width: 165px;
-
-}
-
-
-.new-music-link p {
-    margin-bottom: 0.5rem;
-}
-
-
-
-@media(min-width: 577px) {
-    .new-music img {
-    float: left;
-    }
-}
-
-@media(min-width: 577px) {
-    .new-music h2, .new-music h3, .new-music p {
-        text-align: left;
-    }
 }
 
 .new-music img {
-    padding-right: 10px;
-    padding-bottom: 10px;
+    
+    height: 160px;
+    width: 160px;
+
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.new-music:hover{
+    color: #e9ecef;
+}
+
+.new-music:hover img {
+    height: 165px;
+    width: 165px;
+}
+
+@media(max-width: 576px) {
+    .new-music {
+    text-align: center;
+    }
+}
+
+.new-music p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .new-music-container {
@@ -499,18 +489,49 @@ body {
     -o-background-size: cover;
     background-size: cover;
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
     position: relative;
+    
+    color: #fafafa;
 }
 
 /*-------albums---------*/
 
+.track-list-container {
+    text-align: center;
+
+}
+
 .album-image {
-    padding: 15px 15px;
+    padding: 0.5rem 0.5rem;
+}
+
+.more-albums-container {
+    display: none
+}
+
+@media(min-width:577px) {
+    .more-albums-container {
+    display: block;
+
+    }
+}
+
+.track-list iframe {
+    min-height: 650px;
+    padding: 25px 0px;
+}
+
+.more-albums-container .section-header {
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+/*Gallery*/
+
+.gallery-image img {
+    height: 160px;
+    width: 160px;
+    margin-bottom: 25px;
 }
 
 /*buttons*/
