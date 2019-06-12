@@ -40,8 +40,6 @@ body {
     padding-right: 0;
     z-index: 1;
     background-color: transparent;
-        
-
 }
 
 .header-container {
@@ -114,7 +112,6 @@ body {
     font-family: 'Exo', sans-serif;
     font-weight: 700;
 }
-
 
 
 .social-container {
@@ -335,7 +332,6 @@ body {
 }
 
 
-
 .news-card-1 {
     background-image: url(../images/London2.jpg);
 }
@@ -394,7 +390,6 @@ body {
 }
 
 
-
 /* New overlay on hover */
 .overlay-image .hover {
  position: absolute;
@@ -408,7 +403,6 @@ body {
 }
 
 
-
 .overlay-image:hover .hover {
  opacity: 1;
 }
@@ -416,11 +410,10 @@ body {
 .overlay-image .normal {
  transition: .5s ease;
 }
+
 .overlay-image:hover .normal {
  opacity: 0;
 }
-
-
 
 
 .band-image, .member-image {
