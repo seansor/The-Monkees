@@ -5,8 +5,9 @@ body {
     background-color: #fafafa;
 }
 
-.logo {
+/*.logo {
     background-image: url("../images/monkees-logo.png");
+    
     background-position: center;
     background-repeat: no-repeat;
 
@@ -21,7 +22,7 @@ body {
     opacity: 0.5;
     min-height: 70px;
     animation: move 1.5s ease-in-out;
-}
+}*/
 
 @keyframes move {
     from {
@@ -44,7 +45,9 @@ body {
 }
 
 .header-container {
+    position: relative;
     background-color: #f55336;
+    z-index: 1;
 }
 
 .header-wrapper {
@@ -72,13 +75,22 @@ body {
     border-radius: 22px;
 }
 
-.navbar-dark .navbar-toggler {
+
+/*.show .navbar-nav {
+    position: absolute;
+    top: 30px;
+}*/
+
+.navbar .navbar-toggler {
     font-size: 1.5rem;
     border-color: rgba(255, 227, 143, 0.7);
-    margin-top: 0.5rem;
+    margin-right: 0.5rem;
     padding: 0;
 }
 
+.navbar-brand {
+    margin-left: 1rem;
+}
 
 .navbar-container {
     margin-bottom: 0;
@@ -87,32 +99,63 @@ body {
     padding-left: 0;
 }
 
-.navbar-nav .nav-link {
+
+.navbar {
     position: relative;
-    animation: move 1.5s ease-in-out;
+    animation: move 1s ease-in-out;
+    padding: 0!important;
 }
 
+
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(255, 193, 7, .5);
+    color: rgb(255, 226, 7, .5);
 }
 
 .navbar-dark .navbar-nav .active>.nav-link {
-    color: rgb(255, 193, 7, 1);
+    color: rgb(255, 226, 7, 1);
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-    color: rgb(255, 193, 7, 1);
+    color: rgb(255, 226, 7, 1);
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgba(255, 193, 7, 0.75);
+    color: rgba(255, 226, 7, 0.75);
 }
 
 .nav-item {
     font-family: 'Exo', sans-serif;
     font-weight: 700;
+    font-size: 1.25rem;
 }
+
+
+.show .nav-item {
+    font-size: 1rem;
+}
+
+.show .nav-item .nav-link {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+@media(min-width: 992px) {
+    .nav-item {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+    
 
 
 .social-container {
@@ -137,7 +180,8 @@ body {
 }
 
 .social-links a {
-    color: #ffc107;
+    font-size: 1.25rem;
+    color: #ffe207;
     
     transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
@@ -146,29 +190,10 @@ body {
 
 
 .social-links a:hover {
-    color: #e0ac0f;
-}
-
-.nav-item {
-    font-size: 1.25rem;
-}
-
-@media(min-width: 992px) {
-    .nav-item {
-        font-size: 1.5rem;
-    }
+    color: #ffea4e;
 }
 
 
-.navbar {
-    padding-left: 0;
-    padding-right: 0.5rem;
-}
-
-.navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
-}
 
 
 /*Section Headers*/
@@ -505,6 +530,10 @@ body {
     padding: 0.5rem 0.5rem;
 }
 
+.album-image i {
+    padding-left: 0.25rem;
+}
+
 .more-albums-container {
     display: none
 }
@@ -526,7 +555,7 @@ body {
     text-decoration: underline;
 }
 
-/*Gallery*/
+/*-----------Gallery--------------*/
 
 .gallery-image img {
     height: 160px;
@@ -534,10 +563,36 @@ body {
     margin-bottom: 25px;
 }
 
+/*------------Live--------------*/
+
+.live-image-container {
+
+    height: 90vh;
+    background: url(../images/cover1.jpg) no-repeat center fixed;
+    top: -100px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+
+    position: relative;
+}
+
 /*buttons*/
 
 a:hover {
     text-decoration: none;
+}
+
+.music-links {
+    margin-top: 75px;
 }
 
 .music-links i {
@@ -641,7 +696,7 @@ a:hover {
 footer {
     font-size: 0.75rem;
     background-color: #4f4f4f;
-    color: #fafafa;
+    color: #ffe207;
 }
 
 footer h5 {
@@ -661,7 +716,7 @@ footer h5 {
 
 
 .footer-about, .newsletter {
-    color: #ffc107;
+    color: #ffe207;
     
     transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
@@ -669,7 +724,7 @@ footer h5 {
 }
 
 .footer-about:hover,.footer-about:focus, .newsletter:hover, .newsletter:focus {
-    color: #e0ac0f;
+    color: #ffea4e;
 }
 
 .newsletter .fa {
