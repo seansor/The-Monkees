@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>The Monkees</title>
 </head>
@@ -46,128 +49,128 @@
         </nav>
     </div>
 
-    <!-----------Media links------------>
+    <!-------Contact Image------->
 
-    <div class="container-fluid media-links-container">
+
+    <div class="container-fluid live-img-container content-container">
         <div class="opaque-overlay">&nbsp;</div>
-        <a class="btn--media btn--pink d-inline-block" href="https://music.apple.com/us/artist/the-monkees/4512388" target="_blank"><i class="fa fa-apple" aria-hidden="true"></i>Music</a>
-        <a class="btn--media btn--green d-inline-block" href="https://open.spotify.com/album/338yWfNJWW2SXxVfIdczUD" target="_blank"><i class="fa fa-spotify" aria-hidden="true" target="_blank"></i>Spotify</a>
-        <a class="btn--media btn--red d-inline-block" href="https://www.youtube.com/user/themonkees" target="_blank"><i class="fa fa-youtube" aria-hidden="true" target="_blank"></i>YouTube</a>
+
     </div>
 
+    <!------Contact------>
 
-    <main>
+    <section class="container-fluid live-container content-container">
+        <div class="section-header">
+            <h2 class="text-uppercase">Contact</h2>
+            <hr class="block-divider">
+        </div>
 
-        <!--Upcoming Live Dates Section-->
+        <p><em>For fans wishing to get in touch with the band or for general enquiries 
+        please get in contact via the social media links below.</em></p>
 
-        <section class="container live-container content-container">
-            <div class="section-header">
-                <h2 class="text-uppercase">Upcoming Live Dates</h2>
-                <hr class="block-divider">
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="live-card live-card-1">
-                        <div class="opaque-overlay--curve">&nbsp;</div>
-                        <div class="live-card-info">
-                            <h3>July 01-02</h3>
-                            <h5>London, Uk</h5>
-                            <h5>The O2</h5>
-                            <a class="btn" href="https://www.ticketmaster.ie/" target="_blank">Tickets</a>
-                        </div>
-                    </div>
+        <ul class="list-inline social-links">
+            <li class="list-inline-item">
+                <a href="https://www.facebook.com/TheMonkees/" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://twitter.com/themonkees?lang=en" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.instagram.com/themonkees/?hl=en" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://open.spotify.com/album/338yWfNJWW2SXxVfIdczUD" target="_blank">
+                            <i class="fa fa-spotify" aria-hidden="true"></i>
+                            <span class="sr-only">Spotify</span>
+                        </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://music.apple.com/us/artist/the-monkees/4512388" target="_blank">
+                    <i class="fa fa-apple" aria-hidden="true"></i>
+                    <span class="sr-only">Apple Music</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.youtube.com/user/themonkees" target="_blank">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <span class="sr-only">YouTube</span>
+                </a>
+            </li>
+        </ul>
+
+        <p><em>For promoters or event organizers enquiring about availability, 
+            please fill out the form below.</em></p>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="fullName">Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Full Name">
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="live-card live-card-2">
-                        <div class="opaque-overlay--curve">&nbsp;</div>
-                        <div class="live-card-info">
-                            <h3>August 02-03</h3>
-                            <h5>Manchester, Uk</h5>
-                            <h5>Manchester Arena</h5>
-                            <a class="btn" href="https://www.ticketmaster.ie/" target="_blank">Tickets</a>
-                        </div>
-                    </div>
+                <div class="form-group col-md-6">
+                    <label for="company">Company</label>
+                    <input type="text" class="form-control" id="company" placeholder="Company">
                 </div>
-                <div class="col-12 d-md-none d-lg-block col-lg-4">
-                    <div class="live-card live-card-3">
-                        <div class="opaque-overlay--curve">&nbsp;</div>
-                        <div class="live-card-info">
-                            <h3>August 22-23</h3>
-                            <h5>Dublin, Ireland</h5>
-                            <h5>3 Arena</h5>
-                            <a class="btn" href="https://www.ticketmaster.ie/" target="_blank">Tickets</a>
-                        </div>
-                    </div>
+
+
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
                 </div>
-            </div>
-            <a class="btn btn--local" href="live.html">More Live Dates</a>
-        </section>
-
-
-        <!------------Latest Release-------------->
-
-        <section class="container-fluid latest-container content-container">
-            <div class="section-header">
-                <h2 class="text-uppercase">Latest Release</h2>
-                <hr class="block-divider">
-            </div>
-            <h3>New Single "Daydream Believer" out now!</h3>
-            <div class="row d-flex justify-content-center">
-                <div class="col col-sm-8">
-                    <div class="iframe-container">
-                        <iframe class="resp-iframe" src="https://www.youtube.com/embed/xvqeSJlgaNk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <a class="btn btn--local" href="music.html">More Music</a>
-        </section>
-
-
-        <!-----------News------------>
-
-        <section class="container-fluid news-container content-container">
-            <div class="section-header">
-                <h2>News</h2>
-                <hr class="block-divider">
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="news-card news-card-1">
-                        <div class="opaque-overlay--curve">&nbsp;</div>
-                        <div class="news-card-info">
-                            <h3>"The Monkees' latest performance more than just a tribute show"</h3>
-                        </div>
-                        <a class="btn read-more-btn" href="https://www.stuff.co.nz/the-press/christchurch-life/art-and-stage/christchurch-music/113342163/the-monkees-latest-performance-more-than-just-a-tribute-show" target="_blank">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="news-card news-card-2">
-                        <div class="opaque-overlay--curve">&nbsp;</div>
-                        <div class="news-card-info">
-                            <h3>"Monkees Micky and Mike bring great songs to life one more time"</h3>
-                        </div>
-                        <div class="read-more-btn">
-                            <a class="btn" href="https://www.smh.com.au/entertainment/music/monkees-micky-and-mike-bring-great-songs-to-life-one-more-time-20190612-p51x52.html" target="_blank">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 d-md-none d-lg-block col-lg-3">
-                    <div class="news-card news-card-3">
-                        <div class="opaque-overlay--curve">&nbsp;</div>
-                        <div class="news-card-info">
-                            <h3>"Monkee-ing around at Wellington's Michael Fowler Centre"</h3>
-                        </div>
-                        <div class="read-more-btn">
-                            <a class="btn" href="https://www.stuff.co.nz/entertainment/music/gig-reviews/113383232/monkeeing-around-at-wellingtons-michael-fowler-centre" target="_blank">Read More</a>
-                        </div>
-                    </div>
+                <div class="form-group col-md-6">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone">
                 </div>
             </div>
-        </section>
 
-    </main>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="NoOfPeople">No. of People</label>
+                    <select id="NoOfPeople" class="form-control">
+                        <option selected>Choose...</option>
+                        <option><200</option>
+                        <option>200-500</option>
+                        <option>501-1000</option>
+                        <option>1000+</option>
+                        <option>5000+</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="eventType">Event Type</label>
+                    <select id="eventType" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Festival</option>
+                            <option>Concert</option>
+                            <option>Corporate</option>
+                            <option>Other</option>
+                          </select>
+                </div>
 
-    <!------------Footer--------------->
+            </div>
+            <div class="form-group">
+                <label for="otherInfo">Other Information <small class="text-muted">(Optional)</small></label>
+                <textarea class="form-control" id="otherInfo" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                            I Agree to the Terms & Conditions
+                            </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
 
     <footer class="container-fluid">
         <div id="footer-details" class="row">
@@ -228,6 +231,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>
 
