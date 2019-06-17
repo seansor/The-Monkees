@@ -89,6 +89,11 @@ body {
     }
 }
 
+.navbar-brand img {
+    height: 60px;
+    width: 60px;
+}
+
 
 .home-nav-container {
     position: absolute;
@@ -132,8 +137,7 @@ body {
     border-radius: 22px;
 }
 
-
-.navbar-nav {
+.navbar-collapse {
     padding-right: 1rem;
     text-align: center;
 }
@@ -155,6 +159,19 @@ body {
     position: relative;
     animation: move 1s ease-in-out;
     padding: 0!important;
+}
+
+.navbar button:focus {
+    outline: 0;
+}
+
+.navbar-toggler-icon:focus {
+    outline: 0;
+}
+
+.navbar button:focus +.navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -188,14 +205,20 @@ body {
 .media-links-container {
 
     height: 90vh;
-    background: url(../images/monkees-bg2.jpg) no-repeat;
-    background-size: 100% 100%;
+    
+    background: url(../images/monkees-bg2.jpg) no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
     display: flex;
     align-items: flex-end;
     justify-content: center;
     text-align: center;
     position: relative;
 }
+
 
 @media(min-width: 769px) {
     
@@ -239,6 +262,10 @@ body {
     background-repeat: no-repeat;
     position: relative;
     border-radius: 22px;
+}
+
+.live-card .crimson {
+    color: crimson;
 }
 
 .live-card-1 {
@@ -329,10 +356,26 @@ body {
 .band-img-container {
     
     height: 60vh;
-    background: url(../images/monkees-bg3.jpg) no-repeat center top scroll;
-    background-size: 100% 100%;
+    background: url(../images/group-bg1.jpg) no-repeat center top scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     position: relative;
     color: #fafafa;
+}
+
+@media(min-width: 1025px) {
+    
+    .band-img-container {
+        
+        background: url(../images/monkees-bg3.jpg) no-repeat center top fixed;
+        /*background-position: left 0 top -30px;*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
 
 .container-wrapper--band {
@@ -392,8 +435,11 @@ body {
 
 .music-img-container {
     height: 60vh;
-    background: url(../images/monkees-bg9.jpg) no-repeat center bottom scroll;
-    background-size: 100% 100%;
+    background: url(../images/band-bg2.jpg) no-repeat center top scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
     display: flex;
     align-items: center;
@@ -404,11 +450,15 @@ body {
     color: #fafafa;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 1025px) {
 
     .music-img-container {
-        background: url(../images/monkees-bg4.jpg) no-repeat center bottom scroll;
-        background-size: 100% 100%;
+        background: url(../images/band-bg4.jpg) no-repeat scroll;
+        background-position: left 0 top -100px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 }
 
@@ -576,7 +626,10 @@ body {
 .gallery-img-container {
     height: 60vh;
     background: url(../images/music-bg6.jpg) no-repeat center top scroll;
-    background-size: 110% 120%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -594,11 +647,14 @@ body {
 
     height: 60vh;
     background: url(../images/monkees-bg6.jpg) no-repeat center top scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-size: 100% 100%;
     position: relative;
 }
 
@@ -609,22 +665,47 @@ body {
 
     height: 60vh;
     background: url(../images/monkees-bg8.jpg) no-repeat center top scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
     position: relative;
     
 }
 
-@media(min-width:376px) {
+@media(min-width:769px) {
     
     .contact-img-container {
         background: url(../images/monkees-bg5.jpg) no-repeat center top scroll;
-        background-size: 100% 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     
+}
+
+.contact-container .social-links a {
+    font-size: 2rem;
+    color: #dc3535;
+    padding-right: 1rem;
+}
+
+
+.contact-container .social-links a:hover {
+    color: #bf2b2b;
+}
+
+@media(min-width: 1025px) {
+    .contact-container form {
+        max-width: 60%;
+        margin: 0 auto;
+    }
 }
 
 /*--------------buttons_links---------------*/
@@ -765,8 +846,8 @@ a:hover {
 .btn--green:active,
 .btn--green:focus,
 .btn--green:active:focus {
-    background-color: #1ea94f;
-    border-color: #1ea94f;
+    background-color: #1b9a48;
+    border-color: #1b9a48;
     color: white;
     text-decoration: none;
 }
@@ -851,5 +932,17 @@ footer .copyright {
 
 
 .social-links a:hover {
-    color: #ffea4e;
+    color: #b5a109;
 }
+
+footer form input[type="email"] {
+    width: 200px;
+}
+
+footer form input {
+    margin-bottom: 6px;
+}
+
+
+
+
