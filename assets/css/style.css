@@ -678,10 +678,10 @@ body {
     
 }
 
-@media(min-width:769px) {
+@media(min-width:415px) {
     
     .contact-img-container {
-        background: url(../images/monkees-bg5.jpg) no-repeat center top scroll;
+        background: url(../images/group.jpg) no-repeat center bottom scroll;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
