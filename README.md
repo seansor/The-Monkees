@@ -38,7 +38,7 @@ be able to enjoy looking at old photos of the band and Monkess images such as al
 On the 'Live' page the users will see more live concert dates, their location and venue. They will have a link for each show which will take
 them to the official ticket sellers webpage.
 
-Finally the 'Contact' page provides users with a method of getting in conact with the band. Users are provided with a selection of
+Finally the 'Contact' page provides users with a method of getting in contact with the band. Users are provided with a selection of
 social media links for this purpose. Promoters or event organisers enquiring about availability are provided with a short form which can
 be quickly filled out. The form allows users to select the event type, estimated number of people and provide their contact details.
 
@@ -93,25 +93,23 @@ preferred player.
 
 #### Universal/General (Common to multiple pages)
 
-All buttons and links are functioning and point to the correct destination. All links to other webpages will open in a new tab using 'target="_blank"
+All buttons and links are functioning and point to the correct destination. All links to other webpages will open in a new tab using 'target="_blank".
 Navigation menu and toggler work as expected.
 All images are displayed correctly and do not unintentionally obscure any other content.
-All music files play and stop with when relevant controls are selected. Download music link on audio players work.
-All iframes show video (or other content) content correctly.
+All music files play and stop when relevant controls are selected. Download music link on audio players function.
+All iframes show video (or other content) correctly.
 
 #### Homepage
 
 The links on the homepage to the main media/streaming services all work and point to the correct destination. The Latest Release video plays.
-The "Upcoming Live Shows" section clearly identifies the upcoming shows and the links to purchase tickets are functioning properly. The Latest
-News section displays the article headline and the "Read More" links are functioing and point to the correct destination.
+The "Upcoming Live Shows" section clearly identifies the upcoming shows and the links to purchase tickets are functioning properly. The Latest News section displays the article headline and the "Read More" links are functioning and point to the correct destination.
 
 #### The Band 
 
-'The Band' page displays pictures correctly. Text and pictures positioning are correct.
+'The Band' page displays pictures correctly. Text and pictures' positioning are correct.
 
 #### Music 
-An opaque overlay asking if the user wants to listen on Apple Music appears on hover over "The latest album release". The associated link 
-functions correctly.
+An opaque overlay asking if the user wants to listen on Apple Music appears on hover over "The latest album release". The associated link functions correctly.
 The audio controls for the "Top Tracks" function as expected. 
 The Apple Music iframe in "More tacks" functions as expected. 
 The music videos on this page all function properly.
@@ -123,19 +121,14 @@ navigation window for the photos.
 
 #### Live
 
-The Live concert dates, their location and venue are all displayed correctly. The link to buy tickets functions and directs to the correct
-destination.
+The Live concert dates, their location and venue are all displayed correctly. The link to buy tickets functions and directs to the correct destination.
 
 #### Contact
 
-The social media links all work and direct to the correct destinations. for this purpose. The form works as expected. If you try to submit
-the form with an invalid email address, there will be an error noting the invalid email address. Furthermore, the 'required' attribute
-is added to the 'name, 'company', 'phone', 'email', and "T&Cs"  so if those fields are not filled in, the form will not submit.
-If all field are valid, the page will reload.
+The social media links all work and direct to the correct destinations. for this purpose. The form works as expected. If you try to submit the form with an invalid email address, there will be an error noting the invalid email address. Furthermore, the 'required' attribute is added to the 'name, 'company', 'phone', 'email', and "T&Cs"  so if those fields are not filled in, the form will not submit. If all fields are valid, the page will reload.
 
 #### Footer
-The "Get Updates" field works as expected. If you try to submit the form with an invalid email address, there will be an error noting the
-invalid email address.
+The "Get Updates" field works as expected. If you try to submit the form with an invalid email address, there will be an error noting the invalid email address.
 The links to all of the band's social media accounts function and point to the correct destination.
 
 ### Responsiveness and cross platform operation
@@ -144,22 +137,17 @@ The website has been tested for a wide range of screen sizes and all items displ
 on dictated screen sizes (dictated via media queries). The images and content layout change based on screen size. The video iframes 
 are responsive and take up 66% of the screen width on large screen and close to 100% on mobile devices while maintaining their aspect ratio.
 
-The navbar collpases to a toggle icon on mobile devices. The dropdown background displays darker to make the nav-items stand out from the
-background image.
+The navbar collpases to a toggle icon on mobile devices. The dropdown background displays darker to make the nav-items stand out from the background image.
 
 The site was tested across multiple browsers (Chrome, Safari, Internet Explorer, FireFox) and on multiple mobile devices
 (iPhone 5, 6/7/8, 6/7/8plus, X; Chrome and Safari, iPad, iPadPro Samsung Galaxy, OnePlus) to ensure compatibility and responsiveness. 
-During the testing I notices that on the IPad Pro the audio controls were pushed too close together and were causing a margin on the RHS of 
-the Music Page. To fix this, I edited the media query so that the Top Tracks were displayed 2-across rather than 4 across on devices below a 1200px
-width (as was the case previously for devices below 1025px.)
+During the testing I noticed that on the IPad Pro the audio controls were pushed too close together and were causing a margin on the RHS of the Music Page. To fix this, I edited the media query so that the Top Tracks were displayed 2-across rather than 4-across on devices below a 1200px width (as was the case previously for devices below 1025px.)
 
-I also noticed during testing that when the website was deployed some of the images were not displayed even though they had been showing when run
-from C9. To fix this I had to explicitly point to the current directory by using './assets/...' rather than just '/assets/...'.
+I also noticed during testing that when the website was deployed some of the images were not displayed even though they had been showing when run from C9. To fix this I had to explicitly point to the current directory by using './assets/...' rather than just '/assets/...'.
 
 
 ## Deployment
-This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits
-to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
+This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named 'index.html'.
 
 To run locally, you can clone this repository directly into the editor of your choice by
 pasting 'git clone https://github.com/seansor/The-Monkees.git' into your terminal.
@@ -178,13 +166,13 @@ Images were used from the project assets folder provided. Also images were taken
     -[Wikipedia](https://en.wikipedia.org/wiki/The_Monkees)
     - www.mentalfloss.com
     - https://www.billboard.com
-    - grunge.com
-    - metv.com
-    - newsmax.com
-    - pinterest.com
-    - bbc.co.uk
-    - nytimes.com
-    - wbur.org
+    - www.grunge.com
+    - www.metv.com
+    - www.newsmax.com
+    - www.pinterest.com
+    - www.bbc.co.uk
+    - www.nytimes.com
+    - www.wbur.org
     
     *The images are used for an educational project and are not intended for commercial reuse*
     
